@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <title>CodePen - Text Scramble Effect</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-<link rel="stylesheet" href="./style.scss">
+<link rel="stylesheet" href="./LEVEL1.scss">
+<script src="https://unpkg.com/wavesurfer.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <link rel="preconnect" href="https://fonts.gstatic.com"> 
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -15,13 +18,22 @@
 <html lang="en-US">
  <head>
 
-<link type="text/css" rel="stylesheet" href="css/style.css"/>
+<link type="level_1.scss" rel="stylesheet"href="./level_1.scss"/>
 </head>
 <body>
   <div class="container">
-    <div class="text"></div>
-      </div>
-<script type="text/javascript" src="js/script.js"></script>
+      <div id='main'>
+    <img src="DidYouFindIt.png" id="images"></img>
+      <textarea id="input_bit64" type="text" onchange="changeWave()">
+      </textarea>
+    <div id="sound-wave"></div>
+      
+    <button onclick="playSound()" id="playme">Play me</button>
+    <div id="waveform"></div>
+
+</div>    
+</div>
+<script type="text/javascript" src="level_1.js"></script>
 </body>
 </html>
 <!-- partial -->
